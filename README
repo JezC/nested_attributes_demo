@@ -1,5 +1,7 @@
 Not Yet Ready For Prime Time
 
+Now has routes, and has_many, nested attributes declarations. No Controller actions or before_filters, yet.
+
 This demo app is part of a tutorial about nested RESTful apps. Think "/cars/1/engines/4/fuel_types/3" and "/cars/1/seats/4/safety_features/219". It is partially a note for myself about things that worked, and partly a note for trainees. 
 
 It is markedly missing the tests from Test Driven Design... which I may get around to fixing in a new branch, as a demo of that, too :)
