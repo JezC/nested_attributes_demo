@@ -1,0 +1,2 @@
+class SafetyFeaturesController < ApplicationController
+end

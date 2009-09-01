@@ -1,4 +1,14 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :fuel_types
+
+  map.resources :engines
+
+  map.resources :safety_features
+
+  map.resources :seats
+
+  map.resources :cars
+
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:
