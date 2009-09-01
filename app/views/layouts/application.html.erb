@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title><%= @title || "Nested Models Demo" %></title>
+<!-- Combo-handled YUI CSS files: --> 
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/combo?2.7.0/build/reset-fonts-grids/reset-fonts-grids.css&2.7.0/build/assets/skins/sam/skin.css"> 
+<!-- Combo-handled YUI JS files: --> 
+<script type="text/javascript" src="http://yui.yahooapis.com/combo?2.7.0/build/utilities/utilities.js&2.7.0/build/container/container_core-min.js&2.7.0/build/menu/menu-min.js&2.7.0/build/button/button-min.js&2.7.0/build/datasource/datasource-min.js&2.7.0/build/json/json-min.js&2.7.0/build/charts/charts-min.js&2.7.0/build/cookie/cookie-min.js&2.7.0/build/paginator/paginator-min.js&2.7.0/build/datatable/datatable-min.js&2.7.0/build/editor/editor-min.js&2.7.0/build/resize/resize-min.js&2.7.0/build/layout/layout-min.js&2.7.0/build/stylesheet/stylesheet-min.js"></script>
+</head>
+<body>
+	<div id="doc3" class="yui-t2">
+	   <div id="hd" role="banner"><h1><%= link_to_unless_current "Nested Model Demo", "/" %></h1></div>
+	   <div id="bd" role="main">
+		<div id="yui-main">
+		<div class="yui-b"><div class="yui-g">
+			<%= yield %>
+		</div>
+	<div class="yui-gc">
+	    <div class="yui-u first">
+		<!-- YOUR DATA GOES HERE -->
+		    </div>
+	    <div class="yui-u">
+		<!-- YOUR DATA GOES HERE -->
+		    </div>
+	</div>
+	</div>
+		</div>
+		<div class="yui-b">
+			<%= yield :navigation %>
+		</div>
+
+		</div>
+	   <div id="ft" role="contentinfo"><p>Footer</p></div>
+	</div>
+</body>
+</html>
